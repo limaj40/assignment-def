@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web Engineering Assignment-2</title>
+    <style> 
+             body{
+          background-color: #E01;
+        background: -webkit-linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+                margin-left:20%;
+                padding-left:5%;
+                padding-bottom: 5%;
+                font: wildwest;
+                width:50%;
+                padding-top:3%;
+        
+                height: 95%;
+            }
+        </style
+  </head>
+  <body onload="fortune()">
+    <h1>Part : 1</h1>
+    <h2> Fortune Generator</h2>
+    <p id="fortune"></p>
+    
+    <h1>Part : 2</h1>
+    <h2> Currency Converter</h2>
+    
+    <form >
+         
+      <input type="text" name="amount1" placeholder="Enter Amount..."/>
+      <select id="currency">
+        <option value="tk">TK</option>
+        <option value="dollar">Dollar</option>
+        <option value="euro">Euro</option>
+        <option value="pound">Pound</option>
+      </select>
+      <br>
+      <br>
+      <input type="text" name="amount2" placeholder="Enter Amount..."/>
+      <select id="currency1">
+        <option value="tk">TK</option>
+        <option value="dollar">Dollar</option>
+        <option value="euro">Euro</option>
+        <option value="pound">Pound</option>
+      </select>
+      <br>
+      <br>
+      <input type="button" value="Convert" onclick="convert()" />
+      <br><br>
+      <b><p id="eq"></p></b> 
+      <p id="dollar"></p>
+      <p id="euro"></p>
+      <p id="pound"></p>
+    </form>
+    
+    <h1>Part : 3</h1>
+    <h2>Multiple Choice Questions</h2>
+    <form action="/action_page.php">
+      <p>What is the capital of Bangladesh</p>
+        <input type="radio" name="1" value="a">A. Canada<br>
+        <input type="radio" name="1" value="b">B. Dhaka<br>
+        <input type="radio" name="1" value="c">C. Wales<br>  
+      <p id="ans1" style="color:rad"></p>
+      <p>2.Sheikh Hasina is....</p>
+        <input type="radio" name="2" value="a"> A. President<br>
+        <input type="radio" name="2" value="b"> B. Governor-General<br>
+        <input type="radio" name="2" value="c"> C. Prime Minister<br>  
+        <p id="ans2" style="color:rad"></p>
+      <p>3.Sofia is the capital of</p>
+         <input type="radio" name="3" value="a">A. Belgium<br>
+         <input type="radio" name="3" value="b">B. Bulgaria<br>
+         <input type="radio" name="3" value="c">C. Belarus<br>  
+        <p id="ans3" style="color:rad"></p>
+      <p>4.Facebook creates- </p>
+        <input type="radio" name="4" value="a"> A. Bill Gates<br>
+        <input type="radio" name="4" value="b"> B. Jeff Bezos<br>
+        <input type="radio" name="4" value="c"> C. Mark Zuckerburg<br>  
+        <p id="ans4" style="color:rad"></p>
+      <p>5.Who is knows as the Haryana Hurricane?</p>
+         <input type="radio" name="5" value="a">A. M.S. Dhoni<br>
+         <input type="radio" name="5" value="b">B. Sunil Gavaskar<br>
+         <input type="radio" name="5" value="c">C. Kapil Dev<br>  
+        <p id="ans5" style="color:rad"></p>
+      <h3 style="color:red" id="result"></h3>
+        <input type="button" value="Submit" onclick="quizQuestion()" />
+    </form>
+    
+    
+    <script src="2nd-assignment.js" ></script>
+  </body>
+</html>
